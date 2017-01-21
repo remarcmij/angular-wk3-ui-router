@@ -11,7 +11,7 @@
     <ul class="list-group">
         <li class="list-group-item d-flex justify-content-start" ng-repeat="person in $ctrl.people  | filter:{$: $ctrl.filterText}">
             {{ person.name }}
-            <button class="btn btn-link ml-auto" ui-sref="person({id: person.id})">see</button>
+            <button type="button" class="btn btn-link ml-auto" ui-sref="person({id: person.id})">see</button>
         </li>
     </ul>
 </div>

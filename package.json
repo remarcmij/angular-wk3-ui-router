@@ -1,0 +1,26 @@
+{
+    "name": "assignment-wk3-ui-router",
+    "version": "1.0.0",
+    "description": "Simple example of using ui.router",
+    "main": "index.js",
+    "scripts": {
+        "start": "http-server -c-1",
+        "json-server": "json-server data/data.json --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/remarcmij/angular-wk3-ui-router.git"
+    },
+    "keywords": [
+        "hackyourfuture"
+    ],
+    "author": "Jim Cramer",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/remarcmij/angular-wk3-ui-router/issues"
+    },
+    "homepage": "https://github.com/remarcmij/angular-wk3-ui-router#readme",
+    "dependencies": {
+        "http-server": "^0.9.0"
+    }
+}
