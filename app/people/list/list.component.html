@@ -1,0 +1,17 @@
+<nav class="navbar navbar-light bg-faded">
+    <div class="container">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" ng-model="$ctrl.filterText" placeholder="Filter">
+            <button class="btn btn-outline-success my-2 my-sm-0" ng-click="$ctrl.filterText = ''">Clear</button>
+        </form>
+    </div>
+</nav>
+
+<div class="container my-1">
+    <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-start" ng-repeat="person in $ctrl.people  | filter:{$: $ctrl.filterText}">
+            {{ person.name }}
+            <button class="btn btn-link ml-auto" ui-sref="person({id: person.id})">see</button>
+        </li>
+    </ul>
+</div>
